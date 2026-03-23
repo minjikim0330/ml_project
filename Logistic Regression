@@ -1,0 +1,28 @@
+import numpy as np
+import matplotlib.pyplot as plt
+from sklearn import datasets
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LogisticRegression
+from sklearn.metrics import classification_report, confusion_matrix
+
+# 1. 데이터 로드 (이진 분류: 'Setosa'종인가 아닌가?)
+iris = datasets.load_iris()
+X = iris.data[:, :2]  # 시각화를 위해 처음 두 개의 특성만 사용
+y = (iris.target != 0).astype(int)  # 0이면 Setosa(0), 아니면 1
+
+# 2. 학습 데이터와 테스트 데이터 분할
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+
+# 3. 모델 초기화 및 학습
+model = LogisticRegression()
+model.fit(X_train, y_train)
+
+# 4. 예측 수행
+y_pred = model.predict(X_test)
+y_prob = model.predict_proba(X_test)[:, 1] # 실제 발생 확률 추출
+
+# 5. 결과 평가
+print("혼동 행렬(Confusion Matrix):")
+print(confusion_matrix(y_test, y_pred))
+print("\n분류 리포트(Classification Report):")
+print(classification_report(y_test, y_pred))
