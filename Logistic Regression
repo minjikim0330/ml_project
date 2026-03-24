@@ -1,10 +1,4 @@
-import numpy as np
-import matplotlib.pyplot as plt
-from sklearn import datasets
-from sklearn.model_selection import train_test_split
-from sklearn.linear_model import LogisticRegression
-from sklearn.metrics import classification_report, confusion_matrix
-
+통계학 에서 로지스틱 모델 은 하나 이상의 독립 변수 의 선형 조합 으로 사건의 로그 오즈를 모델링하는 통계 모델 입니다 . 회귀 분석 에서 로지스틱 회귀는 로지스틱 모델의 매개변수를 추정합니다 
 # 1. 데이터 로드 (이진 분류: 'Setosa'종인가 아닌가?)
 iris = datasets.load_iris()
 X = iris.data[:, :2]  # 시각화를 위해 처음 두 개의 특성만 사용
@@ -26,3 +20,4 @@ print("혼동 행렬(Confusion Matrix):")
 print(confusion_matrix(y_test, y_pred))
 print("\n분류 리포트(Classification Report):")
 print(classification_report(y_test, y_pred))
+로지스틱 회귀는 머신러닝, 대부분의 의학 분야, 사회과학을 포함한 다양한 분야에서 사용됩니다. 예를 들어, 부상 환자의 사망률을 예측하는 데 널리 사용되는 외상 및 손상 중증도 점수는 Boyd 등이 로지스틱 회귀를 사용하여 개발한 것입니다. 
