@@ -1,8 +1,6 @@
-import matplotlib.pyplot as plt
-from sklearn.datasets import load_breast_cancer
-from sklearn.model_selection import train_test_split
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.metrics import accuracy_score, classification_report
+랜덤 포레스트 또는 랜덤 결정 포레스트 는 분류 , 회귀 및 기타 작업을 위한 앙상블 학습 방법으로, 훈련 중에 다수의 결정 트리를 생성하여 작동합니다 .
+분류 작업의 경우, 랜덤 포레스트의 출력은 가장 많은 트리가 선택한 클래스입니다. 
+회귀 작업의 경우, 출력은 트리들의 예측 평균입니다. 랜덤 포레스트는 결정 트리가 훈련 세트 에 과적 합되는 경향을 개선합니다
 
 # 1. 데이터 로드 (유방암 진단 데이터: 이진 분류)
 data = load_breast_cancer()
