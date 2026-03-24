@@ -1,8 +1,5 @@
-import matplotlib.pyplot as plt
-from sklearn.datasets import load_iris
-from sklearn.tree import DecisionTreeClassifier, plot_tree
-from sklearn.model_selection import train_test_split
-from sklearn.metrics import accuracy_score
+의사 결정 트리는 의사 결정과 그에 따른 가능한 결과를 트리 형태로 모델링 하는 재귀적 분할 구조로
+조건부 제어문만 포함하는 알고리즘을 표현하는 한 가지 방법입니다 .
 
 # 1. 데이터 로드
 iris = load_iris()
