@@ -58,4 +58,5 @@
     - 김장원: 모델 추천, 발표 자료 제작
     - 김민지: 데이터 전처리, 코드 구현, 보고서 작성
 ## 10. 프로젝트 소스코드
-  - [📄 최종 프로젝트 보고서 다운로드](https://docs.google.com/document/d/1GilZcV1Hq4LWsB0Hd10vK7dx1XVmBmF_BABJjVy0NPY/edit?tab=t.0)
+  - [📄 최종 프로젝트 소스 코드 다운로드](https://docs.google.com/document/d/1GilZcV1Hq4LWsB0Hd10vK7dx1XVmBmF_BABJjVy0NPY/edit?tab=t.0)
+  - [📄 최종 프로젝트 UI 고도화 다운로드]([https://docs.google.com/document/d/1GilZcV1Hq4LWsB0Hd10vK7dx1XVmBmF_BABJjVy0NPY/edit?tab=t.0](https://docs.google.com/document/d/1KhrfT2TcU7rtnJ12S9Fb_jPfDsAuInBynC4kq_gHHeU/edit?usp=sharing))
